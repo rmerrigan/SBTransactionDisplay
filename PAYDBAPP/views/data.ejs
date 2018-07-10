@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Below</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% for(var i = 0; i < rows.length; i++){ %>
+      <% var row = rows[i]%>
+      <table>
+        <tr>
+          <th>Transaction <%= i+1 %></th>
+        </tr>
+        <tr>
+          <td>Register Name: <%= row.registername %></td>
+          <td>Invoice Number: <%= row.invoicenumber %></td>
+          <td>Duration: <%= row.transaction_duration_sec %></td>
+          <td>Card Type: <%= row.cardtype %></td>
+          <td>MID: <%= row.mid %></td>
+          <td>Host Decision: <%= row.host_decision %></td>
+        </tr>
+      </table>
+    <% } %>
+  </body>
+</html>

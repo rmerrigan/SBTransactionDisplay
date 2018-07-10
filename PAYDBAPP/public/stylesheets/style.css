@@ -1,0 +1,12 @@
+a {
+  color: #00B7FF;
+}
+
+table, th, td{
+  border: 1px solid black;
+}
+
+th{
+  font-weight: bold;
+  font-size: 18px;
+}
