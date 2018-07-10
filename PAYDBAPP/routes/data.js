@@ -5,9 +5,9 @@ const mysql = require('mysql');
 router.get('/:id', function(req, res){
 
   const connection = mysql.createConnection({
-    host: 'janchen-170810.starbucks.net',
-    user: 'kenv',
-    password: 'test123'
+    host: 'someDBName',
+    user: 'someUser',
+    password: 'lolzkbye'
   });
 
   const queryInput = req.params.id;
@@ -37,9 +37,9 @@ router.get('/:id', function(req, res){
 router.get('/', function(req, res) {
 
     const connection = mysql.createConnection({
-      host: 'janchen-170810.starbucks.net',
-      user: 'kenv',
-      password: 'test123'
+       host: 'someDBName',
+       user: 'someUser',
+       password: 'lolzkbye'
     });
 
     const queryInput = req.params.id;
